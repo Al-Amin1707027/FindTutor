@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "ukobe5EYW7urw75i2rINFxVMP0XO6bQdcNo8OUQaMUgnL5hpidjLmZlnjYkYr7b86QNEq6x11o4ERvQFvZ9qGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Web API Projects\\FindTutor\\FindTutor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ABDULLAH AL-AMIN\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ABDULLAH AL-AMIN\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ABDULLAH AL-AMIN\\.nuget\\packages\\mysqlconnector\\1.2.1\\mysqlconnector.1.2.1.nupkg.sha512",
+    "C:\\Users\\ABDULLAH AL-AMIN\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\ABDULLAH AL-AMIN\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\ABDULLAH AL-AMIN\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\ABDULLAH AL-AMIN\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

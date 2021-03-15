@@ -1,0 +1,181 @@
+@model FindTutor.Models.registrationModel 
+@{
+     Layout = null;
+}
+
+
+
+
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <!--<link rel="stylesheet" href="homePageStyle.css">!-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo img {
+            width: 33%;
+            border: 3px solid white;
+            border-radius: 70px;
+        }
+        
+        .navbar {
+            display: flex;
+        }
+        
+        .nav-list {
+            width: 80%;
+            background-color: teal;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-list li {
+            list-style: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            outline-color: white;
+        }
+        
+        .nav-list li a:hover {
+            text-decoration: none;
+            color: grey;
+            text-decoration: none;
+        }
+        
+        .right_nav {
+            width: 20%;
+            background-color: teal;
+            text-align: right;
+            font-size: 18px;
+        }
+        
+        .right_nav a {
+            padding: 14px 28px;
+            background-color: inherit;
+            text-decoration: none;
+            align-items: center;
+            color: black;
+        }
+    </style>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"> <img src="../Images/headerLogo.jpg" alt="logo"> </div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Courses">Courses</a></li>
+            <li><a href="#Tutor Corner">Tutor Corner</a></li>
+            <li><a href="#Forum and Discussion">Forum and Discussion</a></li>
+        </ul>
+
+        <div class="right_nav">
+            <a href="#login">Login</a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register_popup">Register</button>
+
+        </div>
+    </nav>
+
+    <div>
+        <form action="homePage/showingFromDB" method="POST">
+            <button type="submit">Check</button>
+        </form>
+    </div> 
+
+
+    <div class="modal fade" role="dialog" id="register_popup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Find<strong>Tutor</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+
+                <form  action="homePage/showingFromDB" method="POST">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" name="firstName"  class="form-control" placeholder=" Full Name ">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastName" class="form-control" placeholder=" Full Name ">
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" name="user_Email" class="form-control " placeholder="Email ">
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" name="user_Password" class="form-control " placeholder="Enter Password ">
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" name="retype_Password" class="form-control " placeholder="Re-enter Password ">
+                        </div>
+                        <button type="submit" >Register</button>
+
+                    </div>
+                    <div class="modal-footer ">
+
+
+                        
+                        <div class="text-center ">
+                            <p>- Or Use These Accounts -</p>
+                            <a class="btn btn-social-icon btn-google "><i class="fa fa-google "></i></a>
+                            <a class="btn btn-social-icon btn-facebook "><i class="fa fa-facebook "></i></a>
+                            <a class="btn btn-social-icon btn-twitter "><i class="fa fa-twitter "></i></a>
+                            <a class="btn btn-social-icon btn-linkedin "><i class="fa fa-linkedin "></i></a>
+                            <a class="btn btn-social-icon btn-github "><i class="fa fa-github "></i></a>
+                            <a class="btn btn-social-icon btn-dropbox "><i class="fa fa-dropbox "></i></a>
+                            <a class="btn btn-social-icon btn-instagram "><i class="fa fa-instagram "></i></a>
+                            <a class="btn btn-social-icon btn-tumblr "><i class="fa fa-tumblr "></i></a>
+                            <a class="btn btn-social-icon btn-github "><i class="fa fa-apple "></i></a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+
+
+
+
+
+</html>

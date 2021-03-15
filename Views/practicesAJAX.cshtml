@@ -1,0 +1,50 @@
+@{
+     Layout = null;
+}
+<head>
+    <h1>Practice AJAX</h1>
+</head>
+
+<body>
+
+
+    <h6>Name:</h6>
+    <input type="text" name="name" id="nameID">
+    <br>
+    <h6>Roll:</h6>
+    <input type="text" name="roll" id="rollID">
+    <br>
+    <button  onclick="loadJsonData()">click Me</button>
+
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous"></script>
+
+<script>
+    function loadJsonData() {
+
+        var name = document.getElementById("nameID").value;
+        console.log(name);
+
+        $.ajax({
+            url: "/SelectDeleteEdit/HostRowDelete",
+            data: {
+                name: name
+            },
+            type: "Post",
+            dataType: "Json",
+            success: function(result) {
+               
+                    console.log("successdul");
+                
+                eval(result.Script);
+            },
+            error: function() {
+                alert("Error");
+            }
+        });
+    }
+</script>
