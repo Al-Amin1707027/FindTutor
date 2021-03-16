@@ -1,0 +1,43 @@
+<body>
+
+    <table>
+
+        <tr>
+            <td>ffffff</td>
+            <td><a data-id="Hello1" href="#" class="linkdelete">Delete</a></td>
+        </tr>
+
+        <tr>
+            <td>fffffff</td>
+            <td><a data-id="Hello23" href="#" class="linkdelete">Delete</a></td>
+        </tr>
+
+        <tr>
+            <td>fffffff</td>
+            <td><a data-id="Hello566" href="#" class="linkdelete">Delete</a></td>
+        </tr>
+
+        <tr>
+            <td>ffffff</td>
+            <td><a data-id="Hello890" href="#" class="linkdelete">Delete</a></td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+    $(".linkdelete").click(function(e) {
+
+        alert($(this).data('id'));
+        var x = $(this).data('id');
+        console.log(x);
+        console.log(typeof(x));
+        $(this).closest("tr").remove();
+    });
+</script>
