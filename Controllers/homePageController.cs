@@ -118,7 +118,8 @@ namespace FindTutor.Controllers
 
 
 
-
+//string url = "https://localhost:5001/api/v1/host/session/"+ session_id +"/start";
+            //return RedirectPermanent(url); 
 
 
      
